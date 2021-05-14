@@ -30,12 +30,19 @@
 
 /*  */
 .btn-wrapper button {
-  background-color: red;
   border: 0px;
   padding: 10px;
   border-radius: 4px;
   color: #fff;
   box-shadow: #333 0px 1px 5px;
+  margin-bottom: 10px;
+}
+.Add-btn{
+  background-color: red;
+}
+
+.remove-btn{
+  background-color: rgb(16, 101, 158);
 }
 .img-wrapper img {
   /* width: 100px; */

@@ -1,6 +1,6 @@
 import Home from '../Components/Home';
 import {connect} from 'react-redux';
-import {addToCart} from '../Services/Actions/action';
+import {addToCart, removeFromCart} from '../Services/Actions/action';
 
 const mapStateToProps = state =>({
     data:state.cartItems
@@ -8,7 +8,10 @@ const mapStateToProps = state =>({
 
 const mapDispatchToProps = dispatch => ({
 
-    addToCartHandler:data=>dispatch(addToCart(data))
+    addToCartHandler:data=>dispatch(addToCart(data)),
+    removeFromCartHandler:(data)=>dispatch(removeFromCart(data))
 })
+
+
 
 export default connect(mapStateToProps,mapDispatchToProps)(Home);
